@@ -12,8 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_borneo.mk
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_borneo.mk \
+    $(LOCAL_DIR)/lineage_borneo.mk
 
 COMMON_LUNCH_CHOICES += \
     aosp_borneo-eng \
-    aosp_borneo-userdebug
+    aosp_borneo-userdebug \
+    lineage_borneo-eng \
+    lineage_borneo-userdebug \
+    lineage_borneo-user
