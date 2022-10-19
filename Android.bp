@@ -1,5 +1,3 @@
 soong_namespace {
-    imports: [
-        "vendor/nxp/opensource/pn5xx"
-    ],
+
 }
