@@ -1,3 +1,4 @@
+
 # Copyright 2014 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,13 +13,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_borneo.mk \
-    $(LOCAL_DIR)/lineage_borneo.mk
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/motorola/borneo/device.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-COMMON_LUNCH_CHOICES += \
-    aosp_borneo-eng \
-    aosp_borneo-userdebug \
-    lineage_borneo-eng \
-    lineage_borneo-userdebug \
-    lineage_borneo-user
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+PRODUCT_NAME := lineage_borneo
+PRODUCT_DEVICE := borneo
+PRODUCT_MODEL := Moto G Power (2021)
+PRODUCT_BRAND := motorola
+PRODUCT_MANUFACTURER := motorola
