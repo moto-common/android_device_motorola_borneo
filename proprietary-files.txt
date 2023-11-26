@@ -271,6 +271,7 @@ vendor/firmware/ilitek_fw.bin
 vendor/firmware/novatek_ts_fw.bin:vendor/firmware/djn_novatek_ts_fw.bin
 
 # Firmware - from cebu
+vendor/firmware/focaltech-dsbj-ft8006s_aa-05-0000-cebu.bin:vendor/firmware/focaltech_ts_fw_dsbj.bin
 vendor/firmware/novatek_ts_fw.bin:vendor/firmware/tm_novatek_ts_fw.bin
 
 # Media
