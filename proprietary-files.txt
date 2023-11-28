@@ -277,6 +277,11 @@ vendor/firmware/novatek_ts_fw.bin:vendor/firmware/tm_novatek_ts_fw.bin
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 
+# NFC - from cebu
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/lib64/libpn557_fw.so
+
 # Sensors
 vendor/lib64/sensors.ssc.so
 
