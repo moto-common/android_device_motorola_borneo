@@ -42,7 +42,7 @@ TARGET_VENDOR_PROP += device/motorola/borneo/props/vendor.prop
 AB_OTA_PARTITIONS += recovery
 
 # NFC
-TARGET_USES_PN5XX_PN8X_NFC := true
+TARGET_USES_NXP_NFC := true
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4250-common/platform.mk)
